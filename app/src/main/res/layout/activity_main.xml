@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/InfoMediaInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:text="Digite a média da instituição:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recebeMediaInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="(ex: 7.0)"
+        android:inputType="numberDecimal"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoMediaInst" />
+
+    <TextView
+        android:id="@+id/infoMediaNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Notas de cada unidade (ex: 7.5)"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recebeMediaInst" />
+
+    <EditText
+        android:id="@+id/recebeN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="1° Unidade "
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/infoMediaNotas"
+        app:layout_constraintTop_toBottomOf="@+id/infoMediaNotas" />
+
+    <EditText
+        android:id="@+id/recebeN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="2° Unidade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/recebeN1"
+        app:layout_constraintTop_toBottomOf="@+id/recebeN1" />
+
+    <EditText
+        android:id="@+id/recebeN3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="3° Unidade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/recebeN2"
+        app:layout_constraintTop_toBottomOf="@+id/recebeN2" />
+
+    <EditText
+        android:id="@+id/recebeN4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="4° Unidade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/recebeN3"
+        app:layout_constraintTop_toBottomOf="@+id/recebeN3" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="calcularTudo"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recebeN4" />
+
+    <TextView
+        android:id="@+id/resultadoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Preencha os campos e veja o resultado"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCalcular" />
+
+    <TextView
+        android:id="@+id/marcadagua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="feito por @ailtu_hyrule"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
