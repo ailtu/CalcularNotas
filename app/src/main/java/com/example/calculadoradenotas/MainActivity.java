@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcularTudo(View view) {
+        float mediaColetada = Float.parseFloat(recebeMedia.getText().toString());
         float nota1 = Float.parseFloat(recebeN1.getText().toString());
         float nota2 = Float.parseFloat(recebeN2.getText().toString());
         float nota3 = Float.parseFloat(recebeN3.getText().toString());
         float nota4 = Float.parseFloat(recebeN4.getText().toString());
-        float mediaColetada = Float.parseFloat(recebeMedia.getText().toString());
 
         TextView text = findViewById(R.id.resultadoFinal);
 
         float mediaCalculada = (nota1 + nota2 + nota3 + nota4) / 4;
 
         if (mediaCalculada >= mediaColetada) {
-            text.setText("Sua média foi " + mediaCalculada + ". Você está aprovado!");
+            text.setText("Sua média foi " + mediaCalculada + " Você está aprovado!");
         } else {
-            text.setText("Sua média foi " + mediaCalculada + ". Você está reprovado!");
+            text.setText("Sua média foi " + mediaCalculada + " Você está reprovado!");
         }
     }
 }
