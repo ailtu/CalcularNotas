@@ -10,7 +10,7 @@ Receives the institution's average, the 4 unit grades and presents the final cal
 
 - [click here!](https://drive.google.com/file/d/1W_Rv-U1jIyEuMwfh10hVykiDcX7h04rA/view?usp=sharing)
 
-## status do desenvolvimento: development status:
+# Status do desenvolvimento: Development status:
 - finalizado ✔️
 
 # Tem Licença? Have License?
