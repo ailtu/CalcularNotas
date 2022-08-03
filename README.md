@@ -12,9 +12,3 @@ Receives the institution's average, the 4 unit grades and presents the final cal
 
 # Status do desenvolvimento: Development status:
 - finalizado ✔️
-
-# Tem Licença? Have License?
-
-> Todo código desenvolvido aqui é livre para ser usado, baixado como quiser.
-
-> All code developed here is free to use, downloaded as you wish.
